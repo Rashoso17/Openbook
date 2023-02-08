@@ -4,7 +4,7 @@ public class Main {
 
         if (numeroIf > 0) {
             System.out.println(numeroIf + " Es positivo");
-        } else if (numero < 0) {
+        } else if (numeroIf < 0) {
             System.out.println(numeroIf + " Es negativo");
         } else {
             System.out.println("0");
