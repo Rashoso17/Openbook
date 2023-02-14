@@ -1,0 +1,43 @@
+public class Main {
+    public Main() {
+    }
+
+    public static void main(String[] args) {
+        Cliente cliente = new Cliente();
+        Trabajador trabajador = new Trabajador();
+
+        cliente.edad = 30;
+        cliente.nombre = "Rashoso";
+        cliente.telefono = 55555555;
+        cliente.credito = 10000000;
+        System.out.println("Nuestro cliente: " + cliente.nombre + " con edad: " + cliente.edad + " y numero de tlfno: "
+                + cliente.telefono + " tiene un credito de: " + cliente.credito);
+        trabajador.edad = 25;
+        trabajador.nombre = "Andres";
+        trabajador.telefono = 556666666;
+        trabajador.salario = 25000;
+        System.out.println("El trabajador: " + trabajador.nombre + " Con edad: " + trabajador.edad +
+                " numero de telefono: " + trabajador.telefono + " tiene un salario de: " + trabajador.salario);
+    }
+}
+class Persona {
+    int edad;
+    String nombre;
+    int telefono;
+
+
+    Persona() {
+    }
+}
+class Cliente extends Persona {
+    double credito;
+
+    Cliente() {
+    }
+}
+class Trabajador extends Persona {
+    double salario;
+
+    Trabajador() {
+    }
+}
